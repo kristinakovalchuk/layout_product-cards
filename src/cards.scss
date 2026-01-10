@@ -15,7 +15,7 @@
   &__image {
     height: 134px;
     width: 160px;
-    padding: 32px 0px 40px;
+    padding: 32px 0 40px;
     margin-inline: auto;
 
   }
@@ -31,7 +31,7 @@
   }
 
   &__code{
-    font-family: Roboto sans-serif;
+    font-family: Roboto, sans-serif;
     color: $second-text-color-gray;
     font-weight: 400;
     font-size: 10px;
