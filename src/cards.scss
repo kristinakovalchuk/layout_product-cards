@@ -1,55 +1,49 @@
 .card {
   display: flex;
+  flex-direction: column;
   box-sizing: border-box;
-
   width: 200px;
   height: 408px;
-  border: 1px solid #f3f3f3;
+  background-color: $bg-color;
+  border: 1px solid $border-color;
   border-radius: 5px;
-  flex-direction: column;
-
-  margin: 0;
-  background-color: #fff;
   padding-inline: 16px;
+  margin: 0;
   align-self: flex-start;
 
-
   &__image {
-    height: 134px;
     width: 160px;
-    margin: 32px 0 40px;
-    margin-inline: auto;
-
+    height: 134px;
+    margin: 32px auto 40px;
+    object-fit: contain;
   }
 
   &__title {
-    color: $main-text-color;
+    margin: 0 0 4px;
     font-family: Roboto, sans-serif;
+    color: $main-text-color;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    margin: 0;
-    margin-bottom: 4px;
   }
 
-  &__code{
+  &__code {
+    margin: 0 0 16px;
     font-family: Roboto, sans-serif;
     color: $second-text-color-gray;
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
-    margin: 0;
-    margin-bottom: 16px;
   }
 
-  &__price{
+  &__price {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 16px;
   }
 
-  &__price-label{
+  &__price-label {
     margin: 0;
     font-family: Roboto, sans-serif;
     color: $second-text-color-gray;
@@ -57,23 +51,22 @@
     font-size: 12px;
   }
 
-  &__price-value{
+  &__price-value {
     margin: 0;
     font-family: Roboto, sans-serif;
     color: $main-text-color;
     font-weight: 700;
-    font-weight: bold;
     font-size: 16px;
-
   }
 
   &__button {
-    margin: 0;
-    padding: 0;
     width: 166px;
     height: 40px;
-    background-color: #00ACDC;
-    color: #fff;
+    margin: 0 0 16px;
+    padding: 0;
+
+    background-color: $accent-color;
+    color: $bg-color;
 
     border: 1px solid transparent;
     border-radius: 5px;
@@ -84,18 +77,12 @@
     text-transform: uppercase;
 
     outline: none;
-    margin-bottom: 16px;
+    cursor: pointer;
 
-    &:hover{
-      color: #00ACDC;
-      background-color: #fff;
-      border: 1px solid #00ACDC;
-      border-radius: 5px;
+    &:hover {
+      background-color: $bg-color;
+      color: $accent-color;
+      border-color: $accent-color;
     }
-
   }
-}
-
-body {
-  margin: 0 auto;
 }
