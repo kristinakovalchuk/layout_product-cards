@@ -5,6 +5,7 @@
   width: 200px;
   height: 408px;
   border: 1px solid #f3f3f3;
+  border-radius: 5px;
   flex-direction: column;
 
   margin: 0;
@@ -16,7 +17,7 @@
   &__image {
     height: 134px;
     width: 160px;
-    padding: 32px 0 40px;
+    margin: 32px 0 40px;
     margin-inline: auto;
 
   }
@@ -28,7 +29,7 @@
     font-size: 12px;
     line-height: 18px;
     margin: 0;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
   }
 
   &__code{
@@ -38,16 +39,15 @@
     font-size: 10px;
     line-height: 14px;
     margin: 0;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   &__price{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 16px;
-
-    }
+    margin-bottom: 16px;
+  }
 
   &__price-label{
     margin: 0;
@@ -64,6 +64,34 @@
     font-weight: 700;
     font-weight: bold;
     font-size: 16px;
+
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    width: 166px;
+    height: 40px;
+    background-color: #00ACDC;
+    color: #fff;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    outline: none;
+    margin-bottom: 16px;
+
+    &:hover{
+      color: #00ACDC;
+      background-color: #fff;
+      border: 1px solid #00ACDC;
+      border-radius: 5px;
+    }
 
   }
 }
