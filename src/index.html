@@ -1,26 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
-    />
+    >
     <title>Product cards</title>
     <link
       rel="stylesheet"
       href="./styles/index.scss"
-    />
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
-  <body class="page" >
+  <body class="page">
     <article class="card" data-qa="card">
-
-      <div class="card__body">
-       <img
-          class="card__image"
-          src="./images/imac.jpeg"
-          alt="iMac-img">
+      <img
+        class="card__image"
+        src="./images/imac.jpeg"
+        alt="iMac-img"
+      ></img>
 
       <h3 class="card__title">
         APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
@@ -31,21 +33,18 @@
       </p>
 
       <div class="stars">
-        <div class="star">
-          <div class="star__icon"></div>
-          <div class="star__icon"></div>
-          <div class="star__icon"></div>
-          <div class="star__icon"></div>
-          <div class="star__icon"></div>
+        <div class="stars__icons">
+          <div class="stars__icon stars__icon--active"></div>
+          <div class="stars__icon stars__icon--active"></div>
+          <div class="stars__icon stars__icon--active"></div>
+          <div class="stars__icon stars__icon--active"></div>
+          <div class="stars__icon stars__icon--active"></div>
         </div>
 
-        <p class="stars_reviews-text">
-          Reviews: 5
-        </p>
+        <p class="stars__reviews-text">Reviews: 5</p>
       </div>
 
       <div class="card__footer">
-
         <div class="card__price">
           <p class="card__price-label">
             Price:
@@ -59,12 +58,11 @@
         <button
           class="button"
           type="button"
-          data-qa="hover">
+          data-qa="hover"
+        >
           Buy
         </button>
-
       </div>
     </article>
-
   </body>
 </html>
