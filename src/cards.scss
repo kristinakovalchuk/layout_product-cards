@@ -3,6 +3,7 @@
   box-sizing: border-box;
 
   width: 200px;
+  height: 408px;
   border: 1px solid #f3f3f3;
   flex-direction: column;
 
@@ -38,6 +39,31 @@
     line-height: 14px;
     margin: 0;
     padding-bottom: 16px;
+  }
+
+  &__price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+
+    }
+
+  &__price-label{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    color: $second-text-color-gray;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  &__price-value{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    color: $main-text-color;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 16px;
 
   }
 }
