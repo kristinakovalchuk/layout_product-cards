@@ -58,6 +58,7 @@
   }
 
   &__button {
+    display: flex;
     width: 166px;
     height: 40px;
 
@@ -71,6 +72,9 @@
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
 
     outline: none;
     cursor: pointer;
