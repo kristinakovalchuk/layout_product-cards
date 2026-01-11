@@ -20,10 +20,6 @@
     &:last-child {
       margin-right: 0;
     }
-
-    &:nth-child(-n + 4) {
-      background-image: url('../images/star-active.svg');
-    }
   }
 
   &__reviews-text {
@@ -34,5 +30,11 @@
     text-align: right;
     vertical-align: bottom;
     color: $main-text-color;
+  }
+
+  @for $i from 1 through 5 {
+    &--#{$i} .stars__icon:nth-child(-n + #{$i}) {
+      background-image: url('../images/star-active.svg');
+    }
   }
 }
